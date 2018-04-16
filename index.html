@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body ng-controller="AppController as ctrl">
+    <input type="text" name="id" ng-model="ctrl.id">
+    <input type="text" name="nombre" ng-model="ctrl.nombre">
+    <button ng-click="ctrl.holaMundo()">Insertar</button>
+
+    <p ng-repeat="item in ctrl.nombresList">{{item.id}} - {{item.nombre}}</p>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="app.module.js"></script>
+    <script type="text/javascript" src="app.controller.js"></script>
+    <script type="text/javascript" src="app.factory.js"></script>
+
+
+</body>
+
+</html>
